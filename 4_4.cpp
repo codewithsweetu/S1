@@ -22,10 +22,10 @@ int max(int num1, int num2, int num3) {
 
 char* max(char* str1, char* str2, char* str3) {
     char* maxStr = str1;
-    if (strcmp(str2, maxStr) > 0) {
+    if (strcmp(maxStr, str2) > 0) {
         maxStr = str2;
     }
-    if (strcmp(str3, maxStr) > 0) {
+    if (strcmp(maxStr, str3) > 0) {
         maxStr = str3;
     }
     return maxStr;
