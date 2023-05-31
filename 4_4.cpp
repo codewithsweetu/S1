@@ -22,10 +22,10 @@ int max(int num1, int num2, int num3) {
 
 char* max(char* str1, char* str2, char* str3) {
     char* maxStr = str1;
-    if (strcmp(maxStr, str2) > 0) {
+    if (strcmp(str2,maxStr) > 0) {
         maxStr = str2;
     }
-    if (strcmp(maxStr, str3) > 0) {
+    if (strcmp(str3,maxStr) > 0) {
         maxStr = str3;
     }
     return maxStr;
@@ -51,12 +51,12 @@ int main() {
 
 /*
 Output : 
-Enter three numbers(Max 20 characters):
+Enter three numbers:
 7
 2
 0
 The maximum number is: 7
-Enter three strings: 
+Enter three strings(Max 20 characters): 
 a
 ab
 abc
